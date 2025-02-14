@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.weather-app {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: 350px;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 70%;
+    margin-right: 0.5rem;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #2575fc;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+    background: #1a5bbf;
+}
+
+.weather-info {
+    margin-bottom: 1.5rem;
+}
+
+.weather-info h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.weather-info p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.forecast-item h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.forecast-item p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+/* Add these new styles at the end of your CSS file */
+body.weather-clear {
+    background: linear-gradient(135deg, #ff9966, #ff5e62); /* Sunny/Clear */
+}
+
+body.weather-rain {
+    background: linear-gradient(135deg, #3a6073, #3a7bd5); /* Rain */
+}
+
+body.weather-clouds {
+    background: linear-gradient(135deg, #636363, #a2ab58); /* Cloudy */
+}
+
+body.weather-snow {
+    background: linear-gradient(135deg, #83a4d4, #b6fbff); /* Snow */
+}
+
+body.weather-storm {
+    background: linear-gradient(135deg, #0f0c29, #302b63); /* Thunderstorm */
+}
+
+body.weather-mist {
+    background: linear-gradient(135deg, #606c88, #3f4c6b); /* Mist/Fog */
+}
+
+/* Keep existing styles below */
